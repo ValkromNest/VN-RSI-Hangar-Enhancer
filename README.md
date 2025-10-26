@@ -1,4 +1,4 @@
-# 🚀 VN RSI Hangar Enhancer (Chrome Extension)
+# VN RSI Hangar Enhancer (Chrome Extension)
 
 ![Static Badge](https://img.shields.io/badge/Version-0.1.0-blue)
 ![Static Badge](https://img.shields.io/badge/License-Free%20to%20Use-green)
@@ -9,7 +9,7 @@ This extension runs locally — no remote calls, no data collection.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 VN RSI Hangar Enhancer/
@@ -21,23 +21,24 @@ VN RSI Hangar Enhancer/
 
 ---
 
-## 🌐 English
+## English
 
-### ✨ Features
+### Features
 - Adds a right-side floating search panel that remains visible while scrolling  
 - Integrates pagination logic with both RSI dropdown and user search  
 - Lightweight and private — no telemetry or analytics  
-- Fully local execution with minimal Chrome permissions  
+- Fully local execution with minimal Chrome permissions
+- No more reloads when switching pages  
 
 ---
 
-### 🧩 Requirements
+### Requirements
 - Google Chrome (latest recommended)
 - Developer Mode enabled in `chrome://extensions`
 
 ---
 
-### ⚙️ Installation (Load Unpacked)
+### Installation (Load Unpacked)
 
 1. **Download or clone** this repository:
    ```bash
@@ -62,18 +63,18 @@ VN RSI Hangar Enhancer/
 
 ---
 
-### 🔁 Updating
+### Updating
 - Modify your local files, then click **Reload** on the extension card in `chrome://extensions`.  
 - If you’ve replaced the folder entirely, remove the old one and reload as above.
 
 ---
 
-### ❌ Uninstalling
+### Uninstalling
 - Go to `chrome://extensions` → click **Remove** or toggle **Off**.
 
 ---
 
-### 🧭 Usage
+### Usage
 - Open your **RSI Hangar** page.
 - A floating search panel appears centered on the right.
 - Use the **search bar** and **Search** button to filter ships or upgrades.
@@ -81,40 +82,31 @@ VN RSI Hangar Enhancer/
 
 ---
 
-### 🧰 Troubleshooting
-
-| Issue | Possible Cause | Solution |
-|-------|----------------|-----------|
-| Panel not visible | Script not injected | Refresh page / check manifest host permissions |
-| Page stuck loading | Syntax error in content.js | Open DevTools → Console for errors |
-| Search inconsistent | Cached or stale data | Reload extension / Hard refresh (Ctrl+Shift+R) |
-
----
-
-### 🔒 Privacy & Permissions
+### Privacy & Permissions
 - Runs only on RSI pages (defined in `manifest.json`).
 - No network connections, telemetry, or analytics.
 - Minimal permissions — just enough to inject custom code.
 
 ---
 
-## 🇮🇹 Italiano
+## Italiano
 
-### ✨ Funzionalità
+### Funzionalità
 - Aggiunge un pannello di ricerca flottante sul lato destro della pagina RSI Hangar  
 - Rimane visibile durante lo scorrimento  
 - Unisce la paginazione del sito con i risultati della tua ricerca  
-- Nessuna raccolta dati, nessuna connessione esterna  
+- Nessuna raccolta dati, nessuna connessione esterna
+- Nessun caricamento cambiando pagina
 
 ---
 
-### 🧩 Requisiti
+### Requisiti
 - Google Chrome (versione recente)
 - Modalità sviluppatore attiva (`chrome://extensions`)
 
 ---
 
-### ⚙️ Installazione (Estensione non pacchettizzata)
+### Installazione (Estensione non pacchettizzata)
 
 1. **Scarica o clona** il repository:
    ```bash
@@ -138,18 +130,18 @@ VN RSI Hangar Enhancer/
 
 ---
 
-### 🔁 Aggiornare
+### Aggiornare
 - Modifica i file locali e premi **Ricarica** sulla scheda dell’estensione.  
 - Se hai sostituito l’intera cartella, rimuovi quella vecchia e ricarica.
 
 ---
 
-### ❌ Disinstallare
+### Disinstallare
 - Vai su `chrome://extensions` → clicca **Rimuovi** o disattiva con l’interruttore.
 
 ---
 
-### 🧭 Utilizzo
+### Utilizzo
 - Apri la pagina del tuo **RSI Hangar**.  
 - Il pannello flottante appare al centro a destra e resta visibile anche durante lo scroll.  
 - Usa la **barra di ricerca** e il pulsante **Search** per filtrare le navi o gli upgrade.  
@@ -157,24 +149,14 @@ VN RSI Hangar Enhancer/
 
 ---
 
-### 🧰 Risoluzione Problemi
-
-| Problema | Causa Probabile | Soluzione |
-|-----------|----------------|------------|
-| Pannello non visibile | Script non iniettato | Aggiorna la pagina / controlla `manifest.json` |
-| Pagina bloccata | Errore in `content.js` | Apri Console (F12) e controlla errori |
-| Ricerca incoerente | Cache o dati vecchi | Ricarica l’estensione / Ricarica forzata |
-
----
-
-### 🔒 Privacy & Permessi
+### Privacy & Permessi
 - Funziona solo sulle pagine RSI.  
 - Nessun invio dati, nessuna telemetria.  
 - Permessi minimi per applicare CSS e script personalizzati.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 Pull requests are welcome!  
 If you find a bug or want to suggest a new feature, open an issue describing:
 - The problem or enhancement
@@ -189,5 +171,5 @@ See [LICENSE](./LICENSE) for full text.
 
 ---
 
-### 💬 Credits
+### Credits
 Developed with ❤️ by community members for **Star Citizen** fans.
