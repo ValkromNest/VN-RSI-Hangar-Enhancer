@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "VN's RSI Hangar page Enhancer",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Mostra melt value, assicurazioni e dettagli upgrade sulle card pledges.",
   "icons": { "128": "icon128.png" },
   "content_scripts": [
@@ -13,3 +13,4 @@
     }
   ]
 }
+
