@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "VN's RSI Hangar page Enhancer",
+  "version": "0.1.0",
+  "description": "Mostra melt value, assicurazioni e dettagli upgrade sulle card pledges.",
+  "icons": { "128": "icon128.png" },
+  "content_scripts": [
+    {
+      "matches": ["https://robertsspaceindustries.com/en/account/pledges*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

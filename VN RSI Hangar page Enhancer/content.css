@@ -1,0 +1,122 @@
+/* --- RSI Pledges Enhancer --- */
+
+/* Sottotitolo sotto il titolo principale (per navi upgradate) */
+.rsipe-subtitle {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  font-style: italic;
+}
+
+/* Mantiene coerenza con lo stile RSI */
+.items-col[data-rsipe] {
+  margin-top: 2px;
+}
+
+/* Opzionale: se vuoi più spazio tra Melt e Assicurazione */
+.items-col[data-rsipe='insurance'] {
+  margin-bottom: 4px;
+}
+
+/* Garantisce che le nuove righe ereditino il font e il colore di base */
+.items-col[data-rsipe] label {
+  font-weight: bold;
+  color: #ccc;
+}
+
+/* Piccolo miglioramento visivo per le immagini aggiornate (solo per debug/riconoscibilità)
+   — puoi rimuoverlo se vuoi che tutto appaia perfettamente nativo. */
+.row.trans-background .item-image-wrapper .image {
+  background-size: cover;
+  background-position: center;
+}
+
+/* --- Floating search panel --- */
+.rsipe-float-search {
+  position: fixed;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+  z-index: 1000;
+  width: 280px;
+  background: rgba(18, 18, 22, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  backdrop-filter: blur(6px);
+}
+
+.rsipe-float-search h4 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  letter-spacing: .4px;
+  color: #fff;
+}
+
+.rsipe-search-row {
+  display: flex;
+  gap: 8px;
+}
+
+.rsipe-search-input {
+  flex: 1;
+  min-width: 0;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,.18);
+  background: rgba(255,255,255,.06);
+  color: #fff;
+  outline: none;
+}
+
+.rsipe-search-btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,.18);
+  background: rgba(255,255,255,.1);
+  color: #fff;
+  cursor: pointer;
+}
+
+.rsipe-search-btn:hover {
+  background: rgba(255,255,255,.16);
+}
+
+/* Badge di stato risultati/pagine */
+.rsipe-search-status {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #ccc;
+}
+
+/* Paginazione “cliente” generata dalla ricerca */
+.rsipe-client-pager {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.rsipe-client-pager a,
+.rsipe-client-pager span {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,.18);
+  background: rgba(255,255,255,.06);
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.rsipe-client-pager .active {
+  background: rgba(255,255,255,.18);
+  cursor: default;
+}
+
+@media (max-width: 1200px) {
+  .rsipe-float-search { right: 12px; width: 240px; }
+}
