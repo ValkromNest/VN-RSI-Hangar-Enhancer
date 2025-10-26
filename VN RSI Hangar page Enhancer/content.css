@@ -10,27 +10,9 @@
 }
 
 /* Mantiene coerenza con lo stile RSI */
-.items-col[data-rsipe] {
-  margin-top: 2px;
-}
-
-/* Opzionale: se vuoi più spazio tra Melt e Assicurazione */
-.items-col[data-rsipe='insurance'] {
-  margin-bottom: 4px;
-}
-
-/* Garantisce che le nuove righe ereditino il font e il colore di base */
-.items-col[data-rsipe] label {
-  font-weight: bold;
-  color: #ccc;
-}
-
-/* Piccolo miglioramento visivo per le immagini aggiornate (solo per debug/riconoscibilità)
-   — puoi rimuoverlo se vuoi che tutto appaia perfettamente nativo. */
-.row.trans-background .item-image-wrapper .image {
-  background-size: cover;
-  background-position: center;
-}
+.items-col[data-rsipe] { margin-top: 2px; }
+.items-col[data-rsipe='insurance'] { margin-bottom: 4px; }
+.items-col[data-rsipe] label { font-weight: bold; color: #ccc; }
 
 /* --- Floating search panel --- */
 .rsipe-float-search {
@@ -79,42 +61,53 @@
   color: #fff;
   cursor: pointer;
 }
+.rsipe-search-btn:hover { background: rgba(255,255,255,.16); }
 
-.rsipe-search-btn:hover {
-  background: rgba(255,255,255,.16);
-}
-
-/* Badge di stato risultati/pagine */
-.rsipe-search-status {
-  margin-top: 8px;
-  font-size: 12px;
-  color: #ccc;
-}
-
-/* Paginazione “cliente” generata dalla ricerca */
+/* --- Client pager container --- */
 .rsipe-client-pager {
   margin-top: 10px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
+  align-items: center;
+  gap: 8px;
 }
 
-.rsipe-client-pager a,
-.rsipe-client-pager span {
-  display: inline-block;
-  padding: 4px 8px;
+/* Bottoni RSI originali (usiamo le classi native del sito) */
+.rsipe-client-pager .btn.disabled { pointer-events: none; opacity: .5; }
+
+/* Select pagina — stile coerente con dropdown RSI e numeri azzurri */
+.rsipe-client-pager .rsipe-page-select {
+  appearance: none;
+  background: rgba(20, 20, 26, 0.85);
+  border: 1px solid rgba(255,255,255,0.2);
   border-radius: 6px;
-  border: 1px solid rgba(255,255,255,.18);
-  background: rgba(255,255,255,.06);
   color: #fff;
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 28px 6px 10px;
+  line-height: 1.4;
+  height: 32px;
   cursor: pointer;
-  text-decoration: none;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.35) inset;
+  transition: background 0.2s ease, border 0.2s ease;
 }
 
-.rsipe-client-pager .active {
-  background: rgba(255,255,255,.18);
-  cursor: default;
+.rsipe-client-pager .rsipe-page-select:hover,
+.rsipe-client-pager .rsipe-page-select:focus {
+  background: rgba(30, 30, 36, 0.95);
+  border-color: rgba(0,186,255,0.4);
+  outline: none;
+}
+
+/* Opzioni del menu a tendina: numeri azzurri ben visibili */
+.rsipe-client-pager .rsipe-page-select option {
+  background: #0d0d11;
+  color: #00baff;   /* azzurro fluo */
+  font-weight: 600;
+}
+.rsipe-client-pager .rsipe-page-select option:checked,
+.rsipe-client-pager .rsipe-page-select option:hover {
+  background: #10141a;
+  color: #00d4ff;
 }
 
 @media (max-width: 1200px) {
