@@ -1,6 +1,6 @@
 # 🚀 VN RSI Hangar Enhancer (Chrome Extension)
 
-![Static Badge](https://img.shields.io/badge/Version-1.0.0-blue)
+![Static Badge](https://img.shields.io/badge/Version-0.1.0-blue)
 ![Static Badge](https://img.shields.io/badge/License-Free%20to%20Use-green)
 ![Static Badge](https://img.shields.io/badge/Chrome-Extension-orange)
 
