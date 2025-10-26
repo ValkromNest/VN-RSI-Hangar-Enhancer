@@ -125,7 +125,7 @@
           if (!qs(titleCol, ".rsipe-subtitle")) {
             const sub = document.createElement("div");
             sub.className = "rsipe-subtitle";
-            sub.textContent = `Origine: ${original}`;
+            sub.textContent = `Origin: ${original}`;
             h3.insertAdjacentElement("afterend", sub);
           }
         }
@@ -146,7 +146,7 @@
 
     if (isUp) applyUpgradedVisuals(row, shipNow);
     if (mv > 0) addItemsColLike(row, "Melt value:", moneyStr(mv), "melt");
-    addItemsColLike(row, "Assicurazione:", ins, "insurance");
+    addItemsColLike(row, "Insurance:", ins, "insurance");
   }
 
   function scan() { qsa(document, ".row.trans-background").forEach(processRow); }
@@ -570,3 +570,4 @@
     init();
   }
 })();
+
