@@ -41,7 +41,7 @@ VN RSI Hangar Enhancer/
 
 1. **Download or clone** this repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/VN-RSI-Hangar-Enhancer.git
+   git clone https://github.com/ValkromNest/VN-RSI-Hangar-Enhancer.git
    ```
    or manually download it as a ZIP and extract it.
 
@@ -118,7 +118,7 @@ VN RSI Hangar Enhancer/
 
 1. **Scarica o clona** il repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/VN-RSI-Hangar-Enhancer.git
+   git clone https://github.com/ValkromNest/VN-RSI-Hangar-Enhancer.git
    ```
    oppure scarica il file ZIP ed estrailo.
 
